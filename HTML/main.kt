@@ -19,7 +19,7 @@ data class Message(var address: String?, var topic: String?, var body: String?, 
                 "body{font-family: 'Montserrat', sans-serif;}" +
                 "td{padding: 10px;}" +
                 "</style>" +
-                "<table bordercolor=\"blue\" border=\"1px\" cellspacing\n=\"1px\">" +
+                "<table bordercolor=\"Red\" border=\"1px\" cellspacing\n=\"1px\">" +
                 (sender?.let { "<tr><td bgcolor= \"#f1faee\">Отправитель: </td><td bgcolor= \"#a8dadc\">$it</td></tr> \n" }?: "") +
                 (address?.let { "<tr><td bgcolor= \"#f1faee\">Адрес отправителя: </td><td bgcolor= \"#a8dadc\">$it</td></tr> \n" }?: "") +
                 (topic?.let { "<tr><td bgcolor= \"#f1faee\">Тема: </td><td bgcolor= \"#a8dadc\">$it</td></tr> \n" }?: "") +
