@@ -20,9 +20,9 @@ data class Message(var address: String?, var topic: String?, var body: String?, 
                 "td{padding: 10px;}" +
                 "</style>" +
                 "<table bordercolor=\"Red\" border=\"1px\" cellspacing\n=\"1px\">" +
-                (sender?.let { "<tr><td bgcolor= \"#f1faee\">Отправитель: </td><td bgcolor= \"##F8B58A\">$it</td></tr> \n" }?: "") +
-                (address?.let { "<tr><td bgcolor= \"#f1faee\">Адрес отправителя: </td><td bgcolor= \"##F8B58A\">$it</td></tr> \n" }?: "") +
-                (topic?.let { "<tr><td bgcolor= \"#f1faee\">Тема: </td><td bgcolor= \"##F8B58A\">$it</td></tr> \n" }?: "") +
+                (sender?.let { "<tr><td bgcolor= \"#f1faee\">Отправитель: </td><td bgcolor= \"#F8B58A\">$it</td></tr> \n" }?: "") +
+                (address?.let { "<tr><td bgcolor= \"#f1faee\">Адрес отправителя: </td><td bgcolor= \"#F8B58A\">$it</td></tr> \n" }?: "") +
+                (topic?.let { "<tr><td bgcolor= \"#f1faee\">Тема: </td><td bgcolor= \"#F8B58A\">$it</td></tr> \n" }?: "") +
                 (body?.let { "<tr><td bgcolor= \"#f1faee\">Сообщение: </td><td bgcolor= \"#F8B58A\"> $it" + (closing?.let {"<br><br>$it"}?:" ")   + "</td></tr> \n" }?: "") +
                 "</table>"
     }
